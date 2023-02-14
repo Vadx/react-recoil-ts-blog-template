@@ -1,10 +1,10 @@
-import FooterSite from '../../components/UI/FooterSite'
-import HeaderSite from '../../components/UI/HeaderSite'
+import FooterSite from '../../UI/FooterSite'
+import HeaderSite from '../../UI/HeaderSite'
 
 import { Container } from '@chakra-ui/react'
 import { Outlet } from 'react-router-dom'
 
-export default function LandingLayout() {
+export default function BlogLayout() {
   return (
     <>
       <HeaderSite />

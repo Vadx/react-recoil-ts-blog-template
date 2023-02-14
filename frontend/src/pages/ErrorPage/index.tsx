@@ -23,7 +23,7 @@ const ErrorPage = () => {
   return (
     <Flex>
       <Image src="https://gw.alipayobjects.com/zos/antfincdn/ZHrcdLPrvN/empty.svg" />
-      <Button size="large" onClick={goHome}>
+      <Button variant="solid" size="lg" onClick={goHome}>
         Back to Home Page
       </Button>
     </Flex>

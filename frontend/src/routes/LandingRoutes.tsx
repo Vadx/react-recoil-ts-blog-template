@@ -1,4 +1,4 @@
-import LandingLayout from '../layout/LandingLayout'
+import LandingLayout from '../components/layout/LandingLayout'
 import AboutPage from '../pages/AboutPage'
 import ContactUsPage from '../pages/ContactUsPage'
 import HomePage from '../pages/HomePage'

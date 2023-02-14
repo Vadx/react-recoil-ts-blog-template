@@ -1,4 +1,4 @@
-import BlogLayout from '../layout/BlogLayout'
+import BlogLayout from '../components/layout/BlogLayout'
 import BlogPage from '../pages/BlogPage'
 import SinglePostPage from '../pages/SinglePostPage'
 
