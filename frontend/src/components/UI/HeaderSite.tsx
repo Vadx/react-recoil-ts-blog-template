@@ -10,22 +10,12 @@ const HeaderSite: React.FC = () => {
       height="56px"
       padding="6px 12px"
       mb="30px"
-      justifyContent={{ md: 'space-between' }}
+      justifyContent="space-between"
     >
-      <Flex
-        align="center"
-        width={{ base: '60px', md: 'auto' }}
-        mr={{ base: 0, md: 2 }}
-        cursor="pointer"
-      >
+      <Flex align="center" mr="2" cursor="pointer">
         <Logo />
       </Flex>
-      <Flex
-        align="center"
-        width={{ base: '60px', md: 'auto' }}
-        mr={{ base: 0, md: 2 }}
-        cursor="pointer"
-      >
+      <Flex align="center" mr={{ base: 0, md: 2 }} cursor="pointer">
         <Navbar />
       </Flex>
     </Flex>

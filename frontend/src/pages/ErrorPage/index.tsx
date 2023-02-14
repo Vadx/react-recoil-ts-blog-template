@@ -1,4 +1,4 @@
-import { Button, Flex, Image } from '@chakra-ui/react'
+import { Button, Flex, Heading, Image } from '@chakra-ui/react'
 import {
   isRouteErrorResponse,
   useRouteError,
@@ -22,6 +22,9 @@ const ErrorPage = () => {
 
   return (
     <Flex>
+      <Heading size="xs" textTransform="uppercase">
+        Something goes wrong!
+      </Heading>
       <Image src="https://gw.alipayobjects.com/zos/antfincdn/ZHrcdLPrvN/empty.svg" />
       <Button variant="solid" size="lg" onClick={goHome}>
         Back to Home Page
