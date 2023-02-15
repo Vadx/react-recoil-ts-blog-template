@@ -5,13 +5,16 @@ import reportWebVitals from './reportWebVitals'
 import { ChakraProvider } from '@chakra-ui/react'
 import { theme } from './theme/theme'
 import { HelmetProvider } from 'react-helmet-async'
+import { RecoilRoot } from 'recoil'
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement)
 root.render(
   <React.StrictMode>
     <HelmetProvider>
       <ChakraProvider theme={theme}>
-        <App />
+        <RecoilRoot>
+          <App />
+        </RecoilRoot>
       </ChakraProvider>
     </HelmetProvider>
   </React.StrictMode>

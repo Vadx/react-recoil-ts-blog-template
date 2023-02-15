@@ -1,16 +1,17 @@
+import PostList from '../../components/PostList'
 import Seo from '../../components/SEO'
 
-const HomePage = () => {
+const BlogPage = () => {
   return (
     <>
       <Seo
-        title="Home"
-        metaDescription="Home page"
-        metaKeywords="Home page Keywords"
+        title="Articles"
+        metaDescription="Articles page"
+        metaKeywords="Articles page Keywords"
       />
-      <div>HomePage</div>
+      <PostList />
     </>
   )
 }
 
-export default HomePage
+export default BlogPage
