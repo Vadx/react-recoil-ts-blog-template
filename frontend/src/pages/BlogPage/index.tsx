@@ -1,3 +1,4 @@
+import PostList from '../../components/PostList'
 import Seo from '../../components/SEO'
 
 const BlogPage = () => {
@@ -8,7 +9,7 @@ const BlogPage = () => {
         metaDescription="Blog page"
         metaKeywords="Blog page Keywords"
       />
-      <div>BlogPage</div>
+      <PostList />
     </>
   )
 }

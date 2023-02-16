@@ -1,10 +1,15 @@
 import { atom } from 'recoil'
 import { IPost } from '../models/IPost'
-import { fetchPostData } from './RecoilSelectors'
+import { currentPostQuery, fetchPostData } from './RecoilSelectors'
 
 const postListState = atom<IPost[]>({
   key: 'postListState',
   default: fetchPostData,
 })
 
-export { postListState }
+const currentPostIDState = atom<IPost[]>({
+  key: 'currentPostIDState',
+  default: [],
+})
+
+export { postListState, currentPostIDState }

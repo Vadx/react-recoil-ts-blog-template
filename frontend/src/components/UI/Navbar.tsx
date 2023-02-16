@@ -16,17 +16,17 @@ const Navbar = () => {
   return (
     <Stack direction="row" align="center">
       <ButtonGroup gap="1" display={{ base: 'none', md: 'flex' }}>
-        <Button variant="ghost">
-          <NavLink to="/">Home</NavLink>
+        <Button as={NavLink} variant="ghost" to="/">
+          Home
         </Button>
-        <Button variant="ghost">
+        <Button as={NavLink} to="/articles" variant="ghost">
           <NavLink to="/articles">Articles</NavLink>
         </Button>
-        <Button variant="ghost">
-          <NavLink to="/about">About Us</NavLink>
+        <Button as={NavLink} to="/about" variant="ghost">
+          About Us
         </Button>
-        <Button variant="ghost">
-          <NavLink to="/contact-us">Contact Us</NavLink>
+        <Button as={NavLink} to="/contact-us" variant="ghost">
+          Contact Us
         </Button>
       </ButtonGroup>
       <Box display={{ base: 'flex', md: 'none' }}>
@@ -38,17 +38,17 @@ const Navbar = () => {
             variant="outline"
           />
           <MenuList>
-            <MenuItem>
-              <NavLink to="/">Home</NavLink>
+            <MenuItem as={NavLink} to="/">
+              Home
             </MenuItem>
-            <MenuItem>
-              <NavLink to="/articles">Articles</NavLink>
+            <MenuItem as={NavLink} to="/articles">
+              Articles
             </MenuItem>
-            <MenuItem>
-              <NavLink to="/about">About Us</NavLink>
+            <MenuItem as={NavLink} to="/about">
+              About Us
             </MenuItem>
-            <MenuItem>
-              <NavLink to="/contact-us">Contact Us</NavLink>
+            <MenuItem as={NavLink} to="/contact-us">
+              Contact Us
             </MenuItem>
           </MenuList>
         </Menu>

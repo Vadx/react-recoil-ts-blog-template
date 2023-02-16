@@ -1,15 +1,15 @@
-import PostList from '../../components/PostList'
+import { Text } from '@chakra-ui/react'
 import Seo from '../../components/SEO'
 
 const BlogPage = () => {
   return (
     <>
       <Seo
-        title="Articles"
-        metaDescription="Articles page"
-        metaKeywords="Articles page Keywords"
+        title="Home"
+        metaDescription="Home page"
+        metaKeywords="Home page Keywords"
       />
-      <PostList />
+      <Text>Home Page</Text>
     </>
   )
 }
